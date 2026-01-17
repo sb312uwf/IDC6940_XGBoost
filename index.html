@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Susanna Brown (Advisor: Dr. Cohen)">
-<meta name="dcterms.date" content="2026-01-15">
+<meta name="dcterms.date" content="2026-01-16">
 
-<title>Writing a great story for data science projects - Spring 2026</title>
+<title>Predicting Housing Prices Using XGBoost</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -2248,8 +2248,8 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Writing a great story for data science projects - Spring 2026</h1>
-<p class="subtitle lead">This is a Report Template Quarto</p>
+<h1 class="title">Predicting Housing Prices Using XGBoost</h1>
+<p class="subtitle lead">Group: XGBoost</p>
 </div>
 
 
@@ -2266,7 +2266,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 15, 2026</p>
+      <p class="date">January 16, 2026</p>
     </div>
   </div>
   
@@ -2278,12 +2278,15 @@ vertical-align: -.125em;
 </header>
 
 
-<p>Slides: <a href="slides.html" target="_blank">slides.html</a></p>
+<p><a href="slides.html" target="_blank">Presentation</a></p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <section id="literature-review-summaries" class="level3">
 <h3 class="anchored" data-anchor-id="literature-review-summaries">Literature Review Summaries</h3>
-<p><span class="citation" data-cites="sharma2024optimal">(<a href="#ref-sharma2024optimal" role="doc-biblioref">Sharma, Harsora, and Ogunleye 2024</a>)</span></p>
+<section id="an-optimal-house-price-prediction-algorithm-xgboost" class="level4">
+<h4 class="anchored" data-anchor-id="an-optimal-house-price-prediction-algorithm-xgboost">An Optimal House Price Prediction Algorithm: XGBoost</h4>
+<p>The study utilized a Kaggle.com dataset of Ames City, Iowa housing data composed of 2930 records of 82 features to predict house prices. Motivated by other studies, which were narrowly focused on model development and a classification approach (higher or lower than listed price), the authors strived instead for a regression approach focusing on optimizing the prediction model and identifying the most influential predictors. The paper highlights the economic importance of accurate predictions, such as consumer spending, borrowing capacity, investment decisions, and impacts on real estate operations, including mortgage lenders. The study was conducted following a six-stage machine learning (ML) pipeline: (1) data collection, (2) data preprocessing, (3) model training, (4) model tuning, (5) prediction and deployment, and (6) monitoring and maintain. Analysis began by comparing five methods to find the best performing model: “…linear regression (LR), multilayer perceptron (MLP), random forest regression (RF), support vector regressor (SVR), and extreme gradient boosting (XGBoost)…” (p. 33). Detailed explanations of each methods benefits, limitations, and equations were provided. XGBoost was emphasized “…based on its interpretability, simplicity, and performance accuracy” (p. 31) as well as its resistance to overfitting and ability to solve real-world problems efficiently. Initial analysis revealed that XGBoost outperformed the other models in terms of R-squared, adjusted R-squared, mean squared error (MSE), root mean squared error (RMSE), and cross-validation (CV) metrics. Each metric also had a brief description and equation listed, satisfying a goal stated in the paper, “to provide a thorough understanding of the metrics used for the model comparisons and the selection of the best-performing model” (p. 38). Similarly, the authors demonstrated the importance of hyperparameter tuning through GridSearchCV, KerasTuner, and RandomSearchCV. The model comparisons were reproduced with GridSearchCV hyperparameter tuning, again resulting in XGBoost performing the best. Feature selection was also conducted to reduce dimensionality. Noted limitations included reliance on a sole dataset, which only included one city and had unknown reliability, as well as acknowledging possible influence from infrastructure variables such as parks, hospitals, and transportation, on housing prices <span class="citation" data-cites="sharma2024optimal">(<a href="#ref-sharma2024optimal" role="doc-biblioref">Sharma, Harsora, and Ogunleye 2024</a>)</span>.</p>
+</section>
 </section>
 </section>
 <section id="methods" class="level2">
@@ -2293,7 +2296,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="analysis-and-results">Analysis and Results</h2>
 <section id="data-exploration-and-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="data-exploration-and-visualization">Data Exploration and Visualization</h3>
-<div class="cell" data-python.reticulate="false">
+<div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>

@@ -1,10 +1,10 @@
 ---
-title: "Present a great story for data science projects"
-subtitle: "This is a Slide Template"
+title: "Predicting Housing Prices Using XGBoost"
+subtitle: "Group: XGBoost"
 author: "Susanna Brown (Advisor: Dr. Cohen)"
-date: '`r Sys.Date()`'
-format:
-  revealjs
+date: "`r Sys.Date()`"
+engine: knitr
+format: revealjs
 course: Capstone Projects in Data Science
 bibliography: references.bib # file contains bibtex for references
 #always_allow_html: true # this allows to get PDF with HTML features
@@ -17,6 +17,41 @@ editor:
     wrap: 72
 ---
 
-```{py python.reticulate=FALSE}
+# Introduction
 
-```
+## Literature Review: 
+
+### An Optimal House Price Prediction Algorithm: XGBoost
+
+::: r-fit-text
+-   Data: Ames City, Iowa housing data with 2930 records of 82 features
+-   Goal: Predict home prices & identify most influential predictors,
+    regression approach
+-   Importance: Economic; Consumer spending, borrowing capacity,
+    investments, real estate, lenders
+-   Analysis: XGBoost best fit model
+    -   Models: "…linear regression (LR), multilayer perceptron (MLP),
+        random forest regression (RF), support vector regressor (SVR),
+        and extreme gradient boosting (XGBoost)…" (p. 33)
+    -   Metrics: $R^2$, adjusted $R^2$, mean squared error (MSE), root
+        mean squared error (RMSE), & cross-validation (CV) metrics
+    -   Hyperparameter tuning (GridSearchCV) & feature selection used
+-   Limitations: 1 dataset, 1 city, unknown reliability, possible
+    infrastructure influence (parks, hospitals, and transportation)
+-   Reference: [@sharma2024optimal]
+:::
+
+# Methods
+
+# Analysis and Results
+
+## Data Exploration and Visualization
+
+## Modeling and Results
+
+## Conclusion
+
+# References
+
+::: {#refs}
+:::
