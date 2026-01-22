@@ -1,0 +1,66 @@
+---
+title: "Predicting Housing Prices Using XGBoost"
+subtitle: "Group: XGBoost"
+author: "Susanna Brown (Advisor: Dr. Cohen)"
+course: Capstone Projects in Data Science
+date: "`r Sys.Date()`"
+engine: knitr
+format: 
+  revealjs:
+    smaller: true
+    scrollable: true
+    theme: sky
+bibliography: references.bib
+self-contained: true
+execute: 
+  warning: false
+  message: false
+---
+
+# Introduction
+
+## Literature Review
+
+::: panel-tabset
+## 1
+
+An Optimal House Price Prediction Algorithm: XGBoost [@sharma2024optimal]
+
+-   Data: Ames City, Iowa housing data with 2930 records of 82 features
+-   Goal: Predict home prices & identify most influential predictors, regression approach
+-   Importance: Economic; Consumer spending, borrowing capacity, investments, real estate, lenders
+-   Analysis: XGBoost best fit model
+    -   Models: "…linear regression (LR), multilayer perceptron (MLP), random forest regression (RF), support vector regressor (SVR), and extreme gradient boosting (XGBoost)…" (p. 33)
+    -   Metrics: $R^2$, adjusted $R^2$, mean squared error (MSE), root mean squared error (RMSE), & cross-validation (CV) metrics
+    -   Hyperparameter tuning (GridSearchCV) & feature selection used
+-   Limitations: 1 dataset, 1 city, unknown reliability, possible infrastructure influence (parks, hospitals, and transportation)
+
+## 2
+
+XGBoost: A Scalable Tree Boosting System [@chen2016xgboost]
+
+-   Data: Observations, features, purpose:
+    -   Allstate, 10M, 4227, insurance claim classification
+    -   Higgs Boson, 10M, 28, event classification
+    -   Yahoo LTRC, 473K, 700, ranking
+    -   Criteo, 1.7B, 67, ad click-through rate
+-   Goal: Build end-to-end system featuring weighted quantile sketching, sparsity-aware algorthithm and cache-aware out-of-core tree learning
+-   Importance: XGBoost is widely used, effective, open-source, portable, scalable, & resistant to overfitting
+-   Analysis: Explained equations; Primarily focusing on advantages of XGBoost for real-world data
+-   Limitations: Not highlighted
+:::
+
+# Methods
+
+# Analysis and Results
+
+## Data Exploration and Visualization
+
+## Modeling and Results
+
+## Conclusion
+
+# References
+
+::: {#refs}
+:::

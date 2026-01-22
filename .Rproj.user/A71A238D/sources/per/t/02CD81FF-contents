@@ -1,0 +1,17 @@
+@article{sharma2024optimal,
+  title={An optimal house price prediction algorithm: XGBoost},
+  author={Sharma, Hemlata and Harsora, Hitesh and Ogunleye, Bayode},
+  journal={Analytics},
+  volume={3},
+  number={1},
+  pages={30--45},
+  year={2024},
+  publisher={MDPI}
+}
+
+@article{chen2016xgboost,
+  title={XGBoost: A Scalable Tree Boosting System},
+  author={Chen, Tianqi},
+  journal={Cornell University},
+  year={2016}
+}

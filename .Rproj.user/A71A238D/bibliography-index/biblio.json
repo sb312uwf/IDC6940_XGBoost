@@ -1,0 +1,57 @@
+{
+    "sources": [
+        {
+            "author": [
+                {
+                    "family": "Sharma",
+                    "given": "Hemlata"
+                },
+                {
+                    "family": "Harsora",
+                    "given": "Hitesh"
+                },
+                {
+                    "family": "Ogunleye",
+                    "given": "Bayode"
+                }
+            ],
+            "container-title": "Analytics",
+            "id": "sharma2024optimal",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "30-45",
+            "publisher": "MDPI",
+            "title": "An optimal house price prediction algorithm: XGBoost",
+            "title-short": "An optimal house price prediction algorithm",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "author": [
+                {
+                    "family": "Chen",
+                    "given": "Tianqi"
+                }
+            ],
+            "container-title": "Cornell University",
+            "id": "chen2016xgboost",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "title": "XGBoost: A scalable tree boosting system",
+            "title-short": "XGBoost",
+            "type": "article-journal"
+        }
+    ],
+    "project_biblios": []
+}

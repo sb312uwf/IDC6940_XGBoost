@@ -1,0 +1,72 @@
+---
+title: "Predicting Housing Prices Using XGBoost"
+subtitle: "Group: XGBoost"
+author: "Susanna Brown (Advisor: Dr. Cohen)"
+course: Capstone Projects in Data Science
+date: "`r Sys.Date()`"
+engine: knitr
+format:
+  html:
+    theme: lumen
+    code-fold: true
+    toc: true
+bibliography: references.bib
+self-contained: true
+execute: 
+  warning: false
+  message: false
+---
+
+[Presentation](slides.html){target="_blank"}
+
+## Introduction
+
+### Literature Review Summaries
+
+#### An Optimal House Price Prediction Algorithm: XGBoost
+
+The study utilized a Kaggle.com dataset of Ames City, Iowa housing data composed of 2930 records of 82 features to predict house prices. Motivated by other studies, which were narrowly focused on model development and a classification approach (higher or lower than listed price), the authors strived instead for a regression approach focusing on optimizing the prediction model and identifying the most influential predictors. The paper highlights the economic importance of accurate predictions, such as consumer spending, borrowing capacity, investment decisions, and impacts on real estate operations, including mortgage lenders. The study was conducted following a six-stage machine learning (ML) pipeline: (1) data collection, (2) data preprocessing, (3) model training, (4) model tuning, (5) prediction and deployment, and (6) monitoring and maintain. Analysis began by comparing five methods to find the best performing model: "…linear regression (LR), multilayer perceptron (MLP), random forest regression (RF), support vector regressor (SVR), and extreme gradient boosting (XGBoost)…" (p. 33). Detailed explanations of each methods benefits, limitations, and equations were provided. XGBoost was emphasized "…based on its interpretability, simplicity, and performance accuracy" (p. 31) as well as its resistance to overfitting and ability to solve real-world problems efficiently. Initial analysis revealed that XGBoost outperformed the other models in terms of R-squared, adjusted R-squared, mean squared error (MSE), root mean squared error (RMSE), and cross-validation (CV) metrics. Each metric also had a brief description and equation listed, satisfying a goal stated in the paper, "to provide a thorough understanding of the metrics used for the model comparisons and the selection of the best-performing model" (p. 38). Similarly, the authors demonstrated the importance of hyperparameter tuning through GridSearchCV, KerasTuner, and RandomSearchCV. The model comparisons were reproduced with GridSearchCV hyperparameter tuning, again resulting in XGBoost performing the best. Feature selection was also conducted to reduce dimensionality. Noted limitations included reliance on a sole dataset, which only included one city and had unknown reliability, as well as acknowledging possible influence from infrastructure variables such as parks, hospitals, and transportation, on housing prices [@sharma2024optimal].
+
+#### XGBoost: A Scalable Tree Boosting System
+
+In the paper, the authors focus on the advantages of XGBoost as a widely used, effective, open-source, portable, and scalable machine learning method that is resistant to overfitting. They point out several use cases for challenges on Kaggle.com including statistics surrounding 2015 challenges where XGBoost was utilized in winning challenges. The goal of the paper was to highlight optimizations for XGBoost, such as its ability to handle sparse data, speed, and scalability. To do this, the authors outline their contributions on page 2:
+
+-   "…design and build a highly scalable end-to-end tree boosting system"
+-   "…propose a theoretically justified weighted quantile sketch for efficient proposal calculation"
+-   "…introduce a novel sparsity-aware algorithm for parallel tree learning"
+-   "…propose an effective cache-aware block structure for out-of-core tree learning"
+
+The paper explains each point with figures and mathematical equations, briefly addressing limitations when applicable, but primarily focusing on the advantages of XGBoost when analyzing large data from four sources. The data chosen was split into test and training data, and ranges in size from 473,000 to 1.7 billion observations and 28 to 4227 features across tasks such as insurance claim classification, event classification, ranking, and ad click-through rate prediction to highlight the efficiency and scalability of XGBoost in real-world applications [@chen2016xgboost].
+
+## Methods
+
+## Analysis and Results
+
+### Data Exploration and Visualization
+
+```{r, warning=FALSE, echo=FALSE, message=FALSE}
+#packages 
+
+```
+
+```{py}
+
+```
+
+```{r}
+
+```
+
+### Modeling and Results
+
+```{r}
+#
+
+```
+
+### Conclusion
+
+## References
+
+::: {#refs}
+:::
