@@ -48,6 +48,11 @@ XGBoost: A Scalable Tree Boosting System [@chen2016xgboost]
 -   Importance: XGBoost is widely used, effective, open-source, portable, scalable, & resistant to overfitting
 -   Analysis: Explained equations; Primarily focusing on advantages of XGBoost for real-world data
 -   Limitations: Not highlighted
+
+## 3
+
+A Comparative Analysis of XGBoost [@bentejac2019comparative]
+
 :::
 
 # Methods

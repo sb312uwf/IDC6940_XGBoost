@@ -38,6 +38,10 @@ In the paper, the authors focus on the advantages of XGBoost as a widely used, e
 
 The paper explains each point with figures and mathematical equations, briefly addressing limitations when applicable, but primarily focusing on the advantages of XGBoost when analyzing large data from four sources. The data chosen was split into test and training data, and ranges in size from 473,000 to 1.7 billion observations and 28 to 4227 features across tasks such as insurance claim classification, event classification, ranking, and ad click-through rate prediction to highlight the efficiency and scalability of XGBoost in real-world applications [@chen2016xgboost].
 
+#### A Comparative Analysis of XGBoost
+
+[@bentejac2019comparative]
+
 ## Methods
 
 ## Analysis and Results
