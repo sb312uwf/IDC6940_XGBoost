@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Susanna Brown (Advisor: Dr. Cohen)">
-  <meta name="dcterms.date" content="2026-01-19">
+  <meta name="dcterms.date" content="2026-01-25">
   <title>Predicting Housing Prices Using XGBoost</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1019,7 +1019,7 @@ Susanna Brown (Advisor: Dr. Cohen)
 </div>
 </div>
 
-  <p class="date">2026-01-19</p>
+  <p class="date">2026-01-25</p>
 </section>
 <section>
 <section id="introduction" class="title-slide slide level1 center">
@@ -1028,8 +1028,13 @@ Susanna Brown (Advisor: Dr. Cohen)
 </section>
 <section id="literature-review" class="slide level2">
 <h2>Literature Review</h2>
+<style type="text/css">
+.reveal .panel-tabset .tab-content {
+font-size: 20px;
+}
+</style>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li><li><a href="#tabset-1-3">3</a></li><li><a href="#tabset-1-4">4</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p>An Optimal House Price Prediction Algorithm: XGBoost <span class="citation" data-cites="sharma2024optimal">(<a href="#/references" role="doc-biblioref" onclick>Sharma, Harsora, and Ogunleye 2024</a>)</span></p>
@@ -1037,12 +1042,13 @@ Susanna Brown (Advisor: Dr. Cohen)
 <li>Data: Ames City, Iowa housing data with 2930 records of 82 features</li>
 <li>Goal: Predict home prices &amp; identify most influential predictors, regression approach</li>
 <li>Importance: Economic; Consumer spending, borrowing capacity, investments, real estate, lenders</li>
-<li>Analysis: XGBoost best fit model
+<li>Analysis:
 <ul>
-<li>Models: “…linear regression (LR), multilayer perceptron (MLP), random forest regression (RF), support vector regressor (SVR), and extreme gradient boosting (XGBoost)…” (p. 33)</li>
-<li>Metrics: <span class="math inline">\(R^2\)</span>, adjusted <span class="math inline">\(R^2\)</span>, mean squared error (MSE), root mean squared error (RMSE), &amp; cross-validation (CV) metrics</li>
+<li>Models: Linear regression, MLP, random forest, SVR, &amp; XGBoost</li>
+<li>Metrics: <span class="math inline">\(R^2\)</span>, adjusted <span class="math inline">\(R^2\)</span>, MSE, RMSE, &amp; cross-validation metrics</li>
 <li>Hyperparameter tuning (GridSearchCV) &amp; feature selection used</li>
 </ul></li>
+<li>Results: XGBoost best fit model</li>
 <li>Limitations: 1 dataset, 1 city, unknown reliability, possible infrastructure influence (parks, hospitals, and transportation)</li>
 </ul>
 </div>
@@ -1060,6 +1066,37 @@ Susanna Brown (Advisor: Dr. Cohen)
 <li>Importance: XGBoost is widely used, effective, open-source, portable, scalable, &amp; resistant to overfitting</li>
 <li>Analysis: Explained equations; Primarily focusing on advantages of XGBoost for real-world data</li>
 <li>Limitations: Not highlighted</li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<p>A Comparative Analysis of XGBoost <span class="citation" data-cites="bentejac2019comparative">(<a href="#/references" role="doc-biblioref" onclick>Bentéjac, Csörgo, and Martı́nez-Muñoz 2019</a>)</span></p>
+<ul>
+<li>Data: 28 datasets from UCI repo</li>
+<li>Goal: Compare methods, highlight importance of parameter tuning, identify most efficient parameters for XGBoost, &amp; explore alternative grids</li>
+<li>Importance: Accuracy &amp; speed</li>
+<li>Analysis: Grid search best fit, XGBoost every combination, &amp; default parameters on training data
+<ul>
+<li>Methods: Random forest, gradient boosting, XGBoost</li>
+<li>Metrics: Accuracy, Nemenyi test, speed</li>
+</ul></li>
+<li>Results: Tuned XGBoost #1 except for accuracy #2; Default XGBoost worst except for speed</li>
+<li>Limitations: Not highlighted other than about specific methods</li>
+</ul>
+</div>
+<div id="tabset-1-4">
+<p>Deep Learning with XGBoost for Real Estate Appraisal <span class="citation" data-cites="zhao2019deep">(<a href="#/references" role="doc-biblioref" onclick>Zhao, Chetty, and Tran 2019</a>)</span></p>
+<ul>
+<li>Data: AVA image database for unstructured; Australian website and Google Maps API for structured</li>
+<li>Goal: Determine if XGBoost was better at predicting home prices with hybrid model</li>
+<li>Importance: Business (lenders, insurance companies, governments) &amp; individuals (real estate buyers/sellers/agents) depend on accuracy</li>
+<li>Analysis: Aesthetic score from AVA, assessment score of visual features, price precondition form structured and unstructured data
+<ul>
+<li>Methods: Hybrid model of CNN, MSP, &amp; XGBoost vs. KNN</li>
+<li>Metrics: MAPE, MAE</li>
+<li>Some pre-processing was done to clean data &amp; eliminate low observations; 82/20 split</li>
+</ul></li>
+<li>Results: XGBoost performed the best</li>
+<li>Limitations: AVA scores still based on personal judgement of photographers</li>
 </ul>
 </div>
 </div>
@@ -1087,11 +1124,17 @@ Susanna Brown (Advisor: Dr. Cohen)
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bentejac2019comparative" class="csl-entry" role="listitem">
+Bentéjac, Candice, Anna Csörgo, and Gonzalo Martı́nez-Muñoz. 2019. <span>“A Comparative Analysis of Xgboost.”</span> <em>ArXiv Abs</em> 392.
+</div>
 <div id="ref-chen2016xgboost" class="csl-entry" role="listitem">
 Chen, Tianqi. 2016. <span>“XGBoost: A Scalable Tree Boosting System.”</span> <em>Cornell University</em>.
 </div>
 <div id="ref-sharma2024optimal" class="csl-entry" role="listitem">
 Sharma, Hemlata, Hitesh Harsora, and Bayode Ogunleye. 2024. <span>“An Optimal House Price Prediction Algorithm: XGBoost.”</span> <em>Analytics</em> 3 (1): 30–45.
+</div>
+<div id="ref-zhao2019deep" class="csl-entry" role="listitem">
+Zhao, Yun, Girija Chetty, and Dat Tran. 2019. <span>“Deep Learning with XGBoost for Real Estate Appraisal.”</span> In <em>2019 IEEE Symposium Series on Computational Intelligence (SSCI)</em>, 1396–1401. IEEE.
 </div>
 </div>
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Susanna Brown (Advisor: Dr. Cohen)">
-<meta name="dcterms.date" content="2026-01-24">
+<meta name="dcterms.date" content="2026-01-25">
 
 <title>Predicting Housing Prices Using XGBoost</title>
 <style>
@@ -2266,7 +2266,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 24, 2026</p>
+      <p class="date">January 25, 2026</p>
     </div>
   </div>
   
@@ -2300,7 +2300,11 @@ vertical-align: -.125em;
 </section>
 <section id="a-comparative-analysis-of-xgboost" class="level4">
 <h4 class="anchored" data-anchor-id="a-comparative-analysis-of-xgboost">A Comparative Analysis of XGBoost</h4>
-<p><span class="citation" data-cites="bentejac2019comparative">(<a href="#ref-bentejac2019comparative" role="doc-biblioref">Bentéjac, Csörgo, and Martı́nez-Muñoz 2019</a>)</span></p>
+<p>As the title implies, the article compares the methods random forest, gradient boosting, and eXtreme Gradient Boosting (XGBoost) and highlights the importance of parameter tuning for accuracy and speed. Furthermore, the authors explored additional goals, including identifying the most efficient combination of parameters for XGBoost and exploring alternative grids for the methods. The authors go into depth about each method, including advantages and disadvantages, as well as the attributes that were adjusted. To show the importance of a consistent and fair analysis, they not only explain this as the reason for not utilizing the built-in feature of XGBoost to handle missing values, but also detail the computer processor used to run the models. The analysis used data from 28 datasets of varying size (and missing values) from the UCI repository across different application fields. To compare the methods, first, a stratified 10-fold cross-validation with grid search was conducted on the training set to select the best parameters. In order to create a more optimized parameter combination for XGBoost, the training set was run against each possible combination of parameters among five: learning_rate, gamma, max_depth, colsample_bylevel, and subsample. Next, the default parameters for each of the three methods were compared. The analysis was concluded by calculating the generalization accuracy of the parameters found from the grid search, default, and various XGBoost results against the test data. Results across the 28 datasets showed XGBoost achieved the second-highest accuracy when using optimized (tuned) parameters, but the worst when using default parameters. Rankings determined using the Nemenyi test found similar results; XGBoost with optimized parameters was the highest average rank. Finally, XGBoost also had the fastest performance, without taking into account grid search time (because the grid sizes are different across the methods). Overall, the results effectively highlighted how often tuned or default methods perform depending on the contents of the dataset, including noise, missing values, overfitting, etc <span class="citation" data-cites="bentejac2019comparative">(<a href="#ref-bentejac2019comparative" role="doc-biblioref">Bentéjac, Csörgo, and Martı́nez-Muñoz 2019</a>)</span>.</p>
+</section>
+<section id="deep-learning-with-xgboost-for-real-estate-appraisal" class="level4">
+<h4 class="anchored" data-anchor-id="deep-learning-with-xgboost-for-real-estate-appraisal">Deep Learning with XGBoost for Real Estate Appraisal</h4>
+<p>In the paper, the authors strive to consider unstructured and structured data to accurately predict real estate prices using a hybrid deep learning model that includes XGBoost at its topmost layer. Accuracy in real estate prices impacts many businesses and individuals – real estate agents, home buyers and sellers, insurance companies, lenders, and governments – which served as the motivation for the authors. The authors explain how XGBoost is often used in data science for image classification for things like social media and image aesthetics, leading to their data source. The unstructured data, typically high-quality property images taken by photographers, was sourced from AVA, a large database for aesthetic visual analysis, then combined with structured, factual data from an online Australian website to conduct the analysis, and the Google Maps API for geographical coordinates. Some pre-processing was done to eliminate data with low observations of photos and suburbs, and the data was split into an 80%/20% training and test set. To conduct the analysis, first, an aesthetic score was automatically assigned to the chosen property images from 1-10, 10 being the most aesthetically pleasing, based on the AVA score. AVA scores were pre-determined based on personal judgement of claimed photographers’ votes, leaving a possible objective limitation on the analysis that the authors sought to combat – the impact of appraiser or real estate agents’ personal judgement in home prices. Regardless, once the scores were obtained, 4 images from each property were cropped and combined into a single larger image to extract visual contents. Next, a mean quality assessment score was assigned from the results of a hybrid model consisting of a convolutional neural network (CNN), MLP, and XGBoost, among other layers detailed in the text. Finally, these assessment scores were combined with the structured data to predict price. Evaluated against mean absolute error (MAE) and mean absolute percentage error (MAPE), XGBoost was found to be the most accurate model (compared to the K-Nearest Neighbors (KNN) algorithm) in determining housing prices from the structured and unstructured data <span class="citation" data-cites="zhao2019deep">(<a href="#ref-zhao2019deep" role="doc-biblioref">Zhao, Chetty, and Tran 2019</a>)</span>.</p>
 </section>
 </section>
 </section>
@@ -2342,6 +2346,9 @@ Chen, Tianqi. 2016. <span>“XGBoost: A Scalable Tree Boosting System.”</span>
 </div>
 <div id="ref-sharma2024optimal" class="csl-entry" role="listitem">
 Sharma, Hemlata, Hitesh Harsora, and Bayode Ogunleye. 2024. <span>“An Optimal House Price Prediction Algorithm: XGBoost.”</span> <em>Analytics</em> 3 (1): 30–45.
+</div>
+<div id="ref-zhao2019deep" class="csl-entry" role="listitem">
+Zhao, Yun, Girija Chetty, and Dat Tran. 2019. <span>“Deep Learning with XGBoost for Real Estate Appraisal.”</span> In <em>2019 IEEE Symposium Series on Computational Intelligence (SSCI)</em>, 1396–1401. IEEE.
 </div>
 </div>
 </section>
