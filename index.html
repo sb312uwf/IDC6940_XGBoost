@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Susanna Brown (Advisor: Dr. Cohen)">
-<meta name="dcterms.date" content="2026-01-25">
+<meta name="dcterms.date" content="2026-01-28">
 
 <title>Predicting Housing Prices Using XGBoost</title>
 <style>
@@ -2266,7 +2266,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 25, 2026</p>
+      <p class="date">January 28, 2026</p>
     </div>
   </div>
   
@@ -2305,6 +2305,10 @@ vertical-align: -.125em;
 <section id="deep-learning-with-xgboost-for-real-estate-appraisal" class="level4">
 <h4 class="anchored" data-anchor-id="deep-learning-with-xgboost-for-real-estate-appraisal">Deep Learning with XGBoost for Real Estate Appraisal</h4>
 <p>In the paper, the authors strive to consider unstructured and structured data to accurately predict real estate prices using a hybrid deep learning model that includes XGBoost at its topmost layer. Accuracy in real estate prices impacts many businesses and individuals – real estate agents, home buyers and sellers, insurance companies, lenders, and governments – which served as the motivation for the authors. The authors explain how XGBoost is often used in data science for image classification for things like social media and image aesthetics, leading to their data source. The unstructured data, typically high-quality property images taken by photographers, was sourced from AVA, a large database for aesthetic visual analysis, then combined with structured, factual data from an online Australian website to conduct the analysis, and the Google Maps API for geographical coordinates. Some pre-processing was done to eliminate data with low observations of photos and suburbs, and the data was split into an 80%/20% training and test set. To conduct the analysis, first, an aesthetic score was automatically assigned to the chosen property images from 1-10, 10 being the most aesthetically pleasing, based on the AVA score. AVA scores were pre-determined based on personal judgement of claimed photographers’ votes, leaving a possible objective limitation on the analysis that the authors sought to combat – the impact of appraiser or real estate agents’ personal judgement in home prices. Regardless, once the scores were obtained, 4 images from each property were cropped and combined into a single larger image to extract visual contents. Next, a mean quality assessment score was assigned from the results of a hybrid model consisting of a convolutional neural network (CNN), MLP, and XGBoost, among other layers detailed in the text. Finally, these assessment scores were combined with the structured data to predict price. Evaluated against mean absolute error (MAE) and mean absolute percentage error (MAPE), XGBoost was found to be the most accurate model (compared to the K-Nearest Neighbors (KNN) algorithm) in determining housing prices from the structured and unstructured data <span class="citation" data-cites="zhao2019deep">(<a href="#ref-zhao2019deep" role="doc-biblioref">Zhao, Chetty, and Tran 2019</a>)</span>.</p>
+</section>
+<section id="research-and-application-of-xgboost-in-imbalanced-data" class="level4">
+<h4 class="anchored" data-anchor-id="research-and-application-of-xgboost-in-imbalanced-data">Research and Application of XGBoost in Imbalanced Data</h4>
+<p>The article shows that although XGBoost is a strong ensemble method, it may not be the best choice for handling imbalanced categorical data. The authors highlight the importance of such data in fields utilizing artificial intelligence (AI) and machine learning (ML), such as medicine and finance, where, for example, a category displaying non-fraudulent charges may significantly outnumber fraudulent charges. The goal of the paper was to overcome typical evaluation methods focused on accuracy that misclassify imbalanced classes and instead determine a “…higher recognition rate and better classification prediction effect.” (p. 9). The data, which underwent a 70/30 split, was sourced from two datasets: (1) Taiwan credit card data from the UCI website that included one categorical variable that predicted if the member would become delinquent, and (2) credit card fraud data from ULB European machine learning labs, with a binomial category of fraud or not. The analysis encompassed three phases. First, the authors looked for missing values, performed statistical analysis, and conducted standardization. Next, outliers were examined and combined with nearby classes to locate and reduce imbalance. Finally, feature selection was performed. To conduct the analysis, an algorithm was created consisting of: support vector machine (SVM), synthetic minority over-sampling technique (SMOTE) referred to as “SVM-SMOTE”, EasyEnsemble, XGBoost, Bayesian parameter optimization, and a 10 K-fold cross-validation. The algorithm was efficiently referred to as “SEB-XGB”. Comparison was first made against XGBoost (with default parameters), SEB-XGB, and the algorithms formed in between, then other models RUSBoost, CatBoost, LightGBM, and EBB-XGBoost. The article discussed the methods used in the analysis in depth, in addition to the computing setup, packages used, and their versions. Evaluated on area under the curve (AUC) and G-mean values to determine feasibility and effectiveness, the SEB-XGB model performed better than XGBoost and the additional combinations/models. However, the authors did address that a limitation of the analysis was that the classification features in the data were binary, which could be impacting the results<span class="citation" data-cites="zhang2022research">(<a href="#ref-zhang2022research" role="doc-biblioref">Zhang, Jia, and Shang 2022</a>)</span>.</p>
 </section>
 </section>
 </section>
@@ -2346,6 +2350,9 @@ Chen, Tianqi. 2016. <span>“XGBoost: A Scalable Tree Boosting System.”</span>
 </div>
 <div id="ref-sharma2024optimal" class="csl-entry" role="listitem">
 Sharma, Hemlata, Hitesh Harsora, and Bayode Ogunleye. 2024. <span>“An Optimal House Price Prediction Algorithm: XGBoost.”</span> <em>Analytics</em> 3 (1): 30–45.
+</div>
+<div id="ref-zhang2022research" class="csl-entry" role="listitem">
+Zhang, Ping, Yiqiao Jia, and Youlin Shang. 2022. <span>“Research and Application of XGBoost in Imbalanced Data.”</span> <em>International Journal of Distributed Sensor Networks</em> 18 (6): 15501329221106935.
 </div>
 <div id="ref-zhao2019deep" class="csl-entry" role="listitem">
 Zhao, Yun, Girija Chetty, and Dat Tran. 2019. <span>“Deep Learning with XGBoost for Real Estate Appraisal.”</span> In <em>2019 IEEE Symposium Series on Computational Intelligence (SSCI)</em>, 1396–1401. IEEE.

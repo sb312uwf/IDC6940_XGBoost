@@ -53,7 +53,7 @@ XGBoost: A Scalable Tree Boosting System [@chen2016xgboost]
     -   Higgs Boson, 10M, 28, event classification
     -   Yahoo LTRC, 473K, 700, ranking
     -   Criteo, 1.7B, 67, ad click-through rate
--   Goal: Build end-to-end system featuring weighted quantile sketching, sparsity-aware algorthithm and cache-aware out-of-core tree learning
+-   Goal: Build end-to-end system featuring weighted quantile sketching, sparsity-aware algorithm and cache-aware out-of-core tree learning
 -   Importance: XGBoost is widely used, effective, open-source, portable, scalable, & resistant to overfitting
 -   Analysis: Explained equations; Primarily focusing on advantages of XGBoost for real-world data
 -   Limitations: Not highlighted
@@ -84,6 +84,22 @@ Deep Learning with XGBoost for Real Estate Appraisal [@zhao2019deep]
     - Some pre-processing was done to clean data & eliminate low observations; 82/20 split
 - Results: XGBoost performed the best
 - Limitations: AVA scores still based on personal judgement of photographers  
+
+## 5
+
+Research and Application of XGBoost in Imbalanced Data [@zhang2022research]
+
+- Data: 2 sets
+    - UCI credit card data predicting delinquency
+    - European credit card fraud data from ULB
+- Goal: Better classification predictions in imbalanced data
+- Importance: Overall model accuracy may misclassify data and impact industries like medicine & finance 
+- Analysis: Missing data, statistical analysis, standardization, outliers, & feature selection
+  - Methods: Created algorithm "SEB-XGB" using SVM, SMOTE, EasyEnsemble, XGBoost, Bayesian, & 10 k-fold cross-validation
+  - Metrics: AUC & G-mean
+  - 70/30 split
+- Results: SEB-XGB performed best
+- Limitations: Binary classification
 
 :::
 

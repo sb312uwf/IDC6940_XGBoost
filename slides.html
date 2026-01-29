@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Susanna Brown (Advisor: Dr. Cohen)">
-  <meta name="dcterms.date" content="2026-01-25">
+  <meta name="dcterms.date" content="2026-01-28">
   <title>Predicting Housing Prices Using XGBoost</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1019,7 +1019,7 @@ Susanna Brown (Advisor: Dr. Cohen)
 </div>
 </div>
 
-  <p class="date">2026-01-25</p>
+  <p class="date">2026-01-28</p>
 </section>
 <section>
 <section id="introduction" class="title-slide slide level1 center">
@@ -1034,7 +1034,7 @@ font-size: 20px;
 }
 </style>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li><li><a href="#tabset-1-3">3</a></li><li><a href="#tabset-1-4">4</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li><li><a href="#tabset-1-3">3</a></li><li><a href="#tabset-1-4">4</a></li><li><a href="#tabset-1-5">5</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p>An Optimal House Price Prediction Algorithm: XGBoost <span class="citation" data-cites="sharma2024optimal">(<a href="#/references" role="doc-biblioref" onclick>Sharma, Harsora, and Ogunleye 2024</a>)</span></p>
@@ -1062,7 +1062,7 @@ font-size: 20px;
 <li>Yahoo LTRC, 473K, 700, ranking</li>
 <li>Criteo, 1.7B, 67, ad click-through rate</li>
 </ul></li>
-<li>Goal: Build end-to-end system featuring weighted quantile sketching, sparsity-aware algorthithm and cache-aware out-of-core tree learning</li>
+<li>Goal: Build end-to-end system featuring weighted quantile sketching, sparsity-aware algorithm and cache-aware out-of-core tree learning</li>
 <li>Importance: XGBoost is widely used, effective, open-source, portable, scalable, &amp; resistant to overfitting</li>
 <li>Analysis: Explained equations; Primarily focusing on advantages of XGBoost for real-world data</li>
 <li>Limitations: Not highlighted</li>
@@ -1099,6 +1099,26 @@ font-size: 20px;
 <li>Limitations: AVA scores still based on personal judgement of photographers</li>
 </ul>
 </div>
+<div id="tabset-1-5">
+<p>Research and Application of XGBoost in Imbalanced Data <span class="citation" data-cites="zhang2022research">(<a href="#/references" role="doc-biblioref" onclick>Zhang, Jia, and Shang 2022</a>)</span></p>
+<ul>
+<li>Data: 2 sets
+<ul>
+<li>UCI credit card data predicting delinquency</li>
+<li>European credit card fraud data from ULB</li>
+</ul></li>
+<li>Goal: Better classification predictions in imbalanced data</li>
+<li>Importance: Overall model accuracy may misclassify data and impact industries like medicine &amp; finance</li>
+<li>Analysis: Missing data, statistical analysis, standardization, outliers, &amp; feature selection
+<ul>
+<li>Methods: Created algorithm “SEB-XGB” using SVM, SMOTE, EasyEnsemble, XGBoost, Bayesian, &amp; 10 k-fold cross-validation</li>
+<li>Metrics: AUC &amp; G-mean</li>
+<li>70/30 split</li>
+</ul></li>
+<li>Results: SEB-XGB performed best</li>
+<li>Limitations: Binary classification</li>
+</ul>
+</div>
 </div>
 </div>
 </section></section>
@@ -1132,6 +1152,9 @@ Chen, Tianqi. 2016. <span>“XGBoost: A Scalable Tree Boosting System.”</span>
 </div>
 <div id="ref-sharma2024optimal" class="csl-entry" role="listitem">
 Sharma, Hemlata, Hitesh Harsora, and Bayode Ogunleye. 2024. <span>“An Optimal House Price Prediction Algorithm: XGBoost.”</span> <em>Analytics</em> 3 (1): 30–45.
+</div>
+<div id="ref-zhang2022research" class="csl-entry" role="listitem">
+Zhang, Ping, Yiqiao Jia, and Youlin Shang. 2022. <span>“Research and Application of XGBoost in Imbalanced Data.”</span> <em>International Journal of Distributed Sensor Networks</em> 18 (6): 15501329221106935.
 </div>
 <div id="ref-zhao2019deep" class="csl-entry" role="listitem">
 Zhao, Yun, Girija Chetty, and Dat Tran. 2019. <span>“Deep Learning with XGBoost for Real Estate Appraisal.”</span> In <em>2019 IEEE Symposium Series on Computational Intelligence (SSCI)</em>, 1396–1401. IEEE.
