@@ -23,8 +23,8 @@ execute:
 
 ```{=html}
 <style type="text/css">
-.reveal .panel-tabset .tab-content {
-  font-size: 20px;
+  .panel-tabset .tab-content {
+    font-size: 20px;
 }
 </style>
 ```
@@ -48,11 +48,11 @@ An Optimal House Price Prediction Algorithm: XGBoost [@sharma2024optimal]
 
 XGBoost: A Scalable Tree Boosting System [@chen2016xgboost]
 
--   Data: Observations, features, purpose:
-    -   Allstate, 10M, 4227, insurance claim classification
-    -   Higgs Boson, 10M, 28, event classification
-    -   Yahoo LTRC, 473K, 700, ranking
-    -   Criteo, 1.7B, 67, ad click-through rate
+-   Data: Source, (observations, factures), purpose:
+    -   Allstate, (10M, 4227), insurance claim classification
+    -   Higgs Boson, (10M, 28), event classification
+    -   Yahoo LTRC, (473K, 700), ranking
+    -   Criteo, (1.7B, 67), ad click-through rate
 -   Goal: Build end-to-end system featuring weighted quantile sketching, sparsity-aware algorithm and cache-aware out-of-core tree learning
 -   Importance: XGBoost is widely used, effective, open-source, portable, scalable, & resistant to overfitting
 -   Analysis: Explained equations; Primarily focusing on advantages of XGBoost for real-world data
@@ -101,6 +101,20 @@ Research and Application of XGBoost in Imbalanced Data [@zhang2022research]
 - Results: SEB-XGB performed best
 - Limitations: Binary classification
 
+## 6
+
+House Price Prediction using Hedonic Pricing Model and Machine Learning Techniques [@zaki2022house]
+
+- Data: Kaggle.com Bostom, MA (506,14)
+- Goal: MLT can predict house prices more accurately, efficiently, & practically
+- Importance: Real estate market, property values to local government decision-making, economic growth, development
+- Analysis:  Develop model, estimate price, compare
+  - Methods: XGBoost & hedonic
+  - Metrics: R-squared
+  - 67/33 split
+- Result: XGboost double the accuracy
+- Limitations: Doesn't consider other factors: mortgage, insurance, historic home, risk, etc.
+
 :::
 
 # Methods
@@ -114,6 +128,14 @@ Research and Application of XGBoost in Imbalanced Data [@zhang2022research]
 ## Conclusion
 
 # References
+
+```{=html}
+<style type="text/css">
+  #refs {
+    font-size: 25px;
+}
+</style>
+```
 
 ::: {#refs}
 :::

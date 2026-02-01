@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Susanna Brown (Advisor: Dr. Cohen)">
-  <meta name="dcterms.date" content="2026-01-28">
+  <meta name="dcterms.date" content="2026-02-01">
   <title>Predicting Housing Prices Using XGBoost</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1019,7 +1019,7 @@ Susanna Brown (Advisor: Dr. Cohen)
 </div>
 </div>
 
-  <p class="date">2026-01-28</p>
+  <p class="date">2026-02-01</p>
 </section>
 <section>
 <section id="introduction" class="title-slide slide level1 center">
@@ -1029,12 +1029,12 @@ Susanna Brown (Advisor: Dr. Cohen)
 <section id="literature-review" class="slide level2">
 <h2>Literature Review</h2>
 <style type="text/css">
-.reveal .panel-tabset .tab-content {
+.panel-tabset .tab-content {
 font-size: 20px;
 }
 </style>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li><li><a href="#tabset-1-3">3</a></li><li><a href="#tabset-1-4">4</a></li><li><a href="#tabset-1-5">5</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li><li><a href="#tabset-1-3">3</a></li><li><a href="#tabset-1-4">4</a></li><li><a href="#tabset-1-5">5</a></li><li><a href="#tabset-1-6">6</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p>An Optimal House Price Prediction Algorithm: XGBoost <span class="citation" data-cites="sharma2024optimal">(<a href="#/references" role="doc-biblioref" onclick>Sharma, Harsora, and Ogunleye 2024</a>)</span></p>
@@ -1055,12 +1055,12 @@ font-size: 20px;
 <div id="tabset-1-2">
 <p>XGBoost: A Scalable Tree Boosting System <span class="citation" data-cites="chen2016xgboost">(<a href="#/references" role="doc-biblioref" onclick>Chen 2016</a>)</span></p>
 <ul>
-<li>Data: Observations, features, purpose:
+<li>Data: Source, (observations, factures), purpose:
 <ul>
-<li>Allstate, 10M, 4227, insurance claim classification</li>
-<li>Higgs Boson, 10M, 28, event classification</li>
-<li>Yahoo LTRC, 473K, 700, ranking</li>
-<li>Criteo, 1.7B, 67, ad click-through rate</li>
+<li>Allstate, (10M, 4227), insurance claim classification</li>
+<li>Higgs Boson, (10M, 28), event classification</li>
+<li>Yahoo LTRC, (473K, 700), ranking</li>
+<li>Criteo, (1.7B, 67), ad click-through rate</li>
 </ul></li>
 <li>Goal: Build end-to-end system featuring weighted quantile sketching, sparsity-aware algorithm and cache-aware out-of-core tree learning</li>
 <li>Importance: XGBoost is widely used, effective, open-source, portable, scalable, &amp; resistant to overfitting</li>
@@ -1119,6 +1119,22 @@ font-size: 20px;
 <li>Limitations: Binary classification</li>
 </ul>
 </div>
+<div id="tabset-1-6">
+<p>House Price Prediction using Hedonic Pricing Model and Machine Learning Techniques <span class="citation" data-cites="zaki2022house">(<a href="#/references" role="doc-biblioref" onclick>Zaki et al. 2022</a>)</span></p>
+<ul>
+<li>Data: Kaggle.com Bostom, MA (506,14)</li>
+<li>Goal: MLT can predict house prices more accurately, efficiently, &amp; practically</li>
+<li>Importance: Real estate market, property values to local government decision-making, economic growth, development</li>
+<li>Analysis: Develop model, estimate price, compare
+<ul>
+<li>Methods: XGBoost &amp; hedonic</li>
+<li>Metrics: R-squared</li>
+<li>67/33 split</li>
+</ul></li>
+<li>Result: XGboost double the accuracy</li>
+<li>Limitations: Doesn’t consider other factors: mortgage, insurance, historic home, risk, etc.</li>
+</ul>
+</div>
 </div>
 </div>
 </section></section>
@@ -1143,6 +1159,11 @@ font-size: 20px;
 </section></section>
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
+<style type="text/css">
+#refs {
+font-size: 25px;
+}
+</style>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-bentejac2019comparative" class="csl-entry" role="listitem">
 Bentéjac, Candice, Anna Csörgo, and Gonzalo Martı́nez-Muñoz. 2019. <span>“A Comparative Analysis of Xgboost.”</span> <em>ArXiv Abs</em> 392.
@@ -1152,6 +1173,9 @@ Chen, Tianqi. 2016. <span>“XGBoost: A Scalable Tree Boosting System.”</span>
 </div>
 <div id="ref-sharma2024optimal" class="csl-entry" role="listitem">
 Sharma, Hemlata, Hitesh Harsora, and Bayode Ogunleye. 2024. <span>“An Optimal House Price Prediction Algorithm: XGBoost.”</span> <em>Analytics</em> 3 (1): 30–45.
+</div>
+<div id="ref-zaki2022house" class="csl-entry" role="listitem">
+Zaki, John, Anand Nayyar, Surjeet Dalal, and Zainab H Ali. 2022. <span>“House Price Prediction Using Hedonic Pricing Model and Machine Learning Techniques.”</span> <em>Concurrency and Computation: Practice and Experience</em> 34 (27): e7342.
 </div>
 <div id="ref-zhang2022research" class="csl-entry" role="listitem">
 Zhang, Ping, Yiqiao Jia, and Youlin Shang. 2022. <span>“Research and Application of XGBoost in Imbalanced Data.”</span> <em>International Journal of Distributed Sensor Networks</em> 18 (6): 15501329221106935.
