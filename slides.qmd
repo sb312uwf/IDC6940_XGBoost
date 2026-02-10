@@ -3,7 +3,7 @@ title: "Predicting Housing Prices Using XGBoost"
 subtitle: "Group: XGBoost"
 author: "Susanna Brown (Advisor: Dr. Cohen)"
 course: Capstone Projects in Data Science
-date: "`r Sys.Date()`"
+date: '`r Sys.Date()`'
 engine: knitr
 format: 
   revealjs:
